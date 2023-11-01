@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/shortenUrl
+Content-Type: application/json
+
+{
+  "originalUrl": "https://spring.io/guides/gs/messaging-redis/"
+}
+
+###
+GET http://localhost:8080/{{shortenedUrl}}
